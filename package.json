@@ -2,7 +2,6 @@
   "private": true,
   "name": "ah-assignment",
   "version": "1.0.0",
-  "main": "src/app.ts",
   "license": "MIT",
   "scripts": {
     "generate": "prisma generate",
