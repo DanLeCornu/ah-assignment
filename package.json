@@ -12,7 +12,8 @@
     "db:generate": "prisma generate",
     "db:migrate": "prisma migrate dev",
     "typecheck": "tsc --noEmit",
-    "postinstall": "pnpm run generate"
+    "postinstall": "pnpm run generate",
+    "heroku-postbuild": "pnpm run build"
   },
   "dependencies": {
     "@prisma/client": "^6.3.1",
