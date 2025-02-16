@@ -5,14 +5,15 @@
   "license": "MIT",
   "scripts": {
     "generate": "prisma generate",
-    "start": "node dist/server.js",
+    "start": "node ./dist/server.js",
     "dev": "tsnd --respawn --transpile-only --no-notify --ignore-watch node_modules src/server.ts",
-    "build": "tsc --build",
+    "build": "tsc",
     "test": "jest",
     "db:generate": "prisma generate",
     "db:migrate": "prisma migrate dev",
     "typecheck": "tsc --noEmit",
-    "postinstall": "pnpm run generate"
+    "postinstall": "pnpm run generate && pnpm run build",
+    "heroku-postbuild": "pnpm run build"
   },
   "dependencies": {
     "@prisma/client": "^6.3.1",
