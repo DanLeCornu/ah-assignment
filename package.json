@@ -5,7 +5,7 @@
   "license": "MIT",
   "scripts": {
     "generate": "prisma generate",
-    "start": "node dist",
+    "start": "node dist/server.js",
     "dev": "tsnd --respawn --transpile-only --no-notify --ignore-watch node_modules src/server.ts",
     "build": "tsc --build",
     "test": "jest",
