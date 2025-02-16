@@ -5,13 +5,15 @@
   "main": "src/app.ts",
   "license": "MIT",
   "scripts": {
+    "generate": "prisma generate",
     "start": "node dist",
     "dev": "tsnd --respawn --transpile-only --no-notify --ignore-watch node_modules src/server.ts",
     "build": "tsc --build",
     "test": "jest",
     "db:generate": "prisma generate",
     "db:migrate": "prisma migrate dev",
-    "typecheck": "tsc --noEmit"
+    "typecheck": "tsc --noEmit",
+    "postinstall": "pnpm run generate"
   },
   "dependencies": {
     "@prisma/client": "^6.3.1",
