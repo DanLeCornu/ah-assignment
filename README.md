@@ -12,6 +12,7 @@ This is a simple API built with Node.js and TypeScript. It provides endpoints fo
 - Prisma
 - Jest
 - PostgreSQL
+- Zod
 
 ## Setup
 
