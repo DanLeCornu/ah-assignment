@@ -55,3 +55,7 @@ All requests must include an `Authorization` header with the value `Bearer <API_
 ```bash
 pnpm test
 ```
+
+## Deployed example
+
+The app is deployed on Heroku and can be accessed at https://ah-assignment-a6ad896dd8f6.herokuapp.com/
