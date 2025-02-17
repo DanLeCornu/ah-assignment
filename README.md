@@ -49,6 +49,16 @@ Endpoints are:
 
 All requests must include an `Authorization` header with the value `Bearer <API_TOKEN>`
 
+example data format for the `POST /api/users` endpoint:
+
+```json
+{
+  "email": "john.doe@example.com",
+  "firstName": "John",
+  "lastName": "Doe",
+	"categories": [1, 2, 3]
+}
+```
 
 ## Run tests
 
