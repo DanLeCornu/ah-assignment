@@ -56,7 +56,7 @@ example data format for the `POST /api/users` endpoint:
   "email": "john.doe@example.com",
   "firstName": "John",
   "lastName": "Doe",
-	"categories": [1, 2, 3]
+  "categories": [1, 2, 3]
 }
 ```
 
